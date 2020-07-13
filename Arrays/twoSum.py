@@ -6,6 +6,7 @@ Time: O(n) | Space: O(n)
 
 
 class Solution:
+  # Two Pass Approach
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         freqCounter = {}
         for i in range(len(nums)):
@@ -15,4 +16,14 @@ class Solution:
             secondNum = target - firstNum
             if secondNum in freqCounter and freqCounter[secondNum] != i:
                 return [i, freqCounter[secondNum]]
-        return [0, 0]
+        return [-1, -1]
+
+  # One Pass Approach
+    def twoSumOnePass(self, nums: List[int], target: int) -> List[int]:
+        freqCounter = {}
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in freqCounter:
+                return [i, freqCounter[complement]]
+            freqCounter[nums[i]] = i
+        return [-1, -1]
