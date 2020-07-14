@@ -36,6 +36,11 @@ def test_twoSum():
     assert sol.twoSum([1, 2, 3, 5], 8) == [2, 3], "Should be [2,3]"
 
 
+def test_twoSumOnePass():
+    sol = Solution()
+    assert sol.twoSumOnePass([1, 2, 5, 9], 7) == [1, 2], "Should be [1,2]"
+
+
 if __name__ == '__main__':
     test_twoSum()
     print("Everything passed!")
