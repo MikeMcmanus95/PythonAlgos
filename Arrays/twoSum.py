@@ -4,6 +4,8 @@ https://leetcode.com/problems/two-sum/
 Time: O(n) | Space: O(n)
 '''
 
+from typing import List
+
 
 class Solution:
   # Two Pass Approach
@@ -27,3 +29,13 @@ class Solution:
                 return [i, freqCounter[complement]]
             freqCounter[nums[i]] = i
         return [-1, -1]
+
+
+def test_twoSum():
+    sol = Solution()
+    assert sol.twoSum([1, 2, 3, 5], 8) == [2, 3], "Should be [2,3]"
+
+
+if __name__ == '__main__':
+    test_twoSum()
+    print("Everything passed!")
