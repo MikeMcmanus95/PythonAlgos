@@ -1,7 +1,7 @@
 '''
 Leetcode #53: Maximum Subarray (Kadane's Algorithm)
 https://leetcode.com/problems/maximum-subarray/
-Time: O(n) | Space O(1)
+Time: O(n) | Space: O(1)
 '''
 from typing import List
 
