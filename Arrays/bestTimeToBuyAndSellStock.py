@@ -3,6 +3,7 @@ Leetcode #121: Best Time to Buy and Sell Stock
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 Time: O(n) | Space O(1)
 '''
+from typing import List
 
 
 class Solution:
