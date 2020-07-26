@@ -3,13 +3,7 @@ Leetcode #617: Merge Two Binary Trees
 https://leetcode.com/problems/merge-two-binary-trees/
 Time: O(n) | Space: O(d) | d = depth of tree
 '''
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+import TreeNode
 
 
 class Solution:
